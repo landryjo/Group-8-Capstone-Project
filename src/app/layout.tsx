@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import { ThemeProvider } from "@/components/ThemeProvider";
-import  Navbar  from "@/components/Navbar";
+import Navbar from "@/components/Navbar";
 import Link from "next/link";
 
 const geistSans = Geist({
@@ -28,21 +28,21 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider>
-      <html lang="en">
+      {/* Let Next.js manage <html> tag statically */}
+      <html lang="en" suppressHydrationWarning>
+        {/* ThemeProvider needs to be inside <body> */}
         <body
-          className={`${geistSans.variable} ${geistMono.variable} 
-          antialiased`}>
+          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        >
           <ThemeProvider
             attribute="class"
             defaultTheme="system"
             enableSystem
             disableTransitionOnChange
           >
-            <div className = "min-h-screen">
+            <div className="min-h-screen">
               <Navbar />
-
               <main className="py-8">
-                {/* container to center content */}
                 <div className="max-w-7xl mx-auto px-4">
                   <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
                     <div className="hidden lg:block lg:col-span-3">
@@ -66,7 +66,7 @@ export default function RootLayout({
                 </div>
               </main>
             </div>
-            </ThemeProvider>
+          </ThemeProvider>
         </body>
       </html>
     </ClerkProvider>
