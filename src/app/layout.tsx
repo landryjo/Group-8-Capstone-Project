@@ -58,9 +58,6 @@ export default function RootLayout({
                           <Link href="/research" className="hover:underline text-primary">
                             Research
                           </Link>
-                          <Link href="/news" className="hover:underline text-primary">
-                            News
-                          </Link>
                         </div>
                       </div>
                     </div>
