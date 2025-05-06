@@ -32,13 +32,12 @@ export default async function Home() {
       <section>
         <h2 className="text-2xl font-bold mb-2">Mission Statement</h2>
           <p className="mb-6">
-            The Data-Intensive Scalable Computing Laboratory (DISCL) at 
-            the Texas Tech University has broad research interests in 
-            parallel and distributed computing, high-performance computing, 
-            cloud computing, computer architectures, and systems software 
-            with a focus on building scalable computing systems for 
-            data-intensive applications in high-performance scientific 
-            computing/high-end enterprise computing.
+          The Texas Tech Data Science and Machine Learning Lab is dedicated to advancing the frontiers of data-driven 
+          research through innovative methods in artificial intelligence, machine learning, and statistical modeling. 
+          Our mission is to develop ethical, scalable, and impactful data solutions that address real-world challenges 
+          in healthcare, cybersecurity, business analytics, and beyond. We are committed to fostering interdisciplinary collaboration, 
+          empowering students and researchers with cutting-edge tools, and contributing to the broader scientific 
+          and technological community through open research and community engagement.
           </p>
       </section>
       
